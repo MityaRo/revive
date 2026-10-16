@@ -1,0 +1,22 @@
+[project]
+name = "revive"
+version = "0.1.0"
+description = "Snapshot and restore the iTerm2 hotkey window: tabs, panes, names, zoom, colors and the Claude Code session in each pane."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = ["iterm2>=2.30"]
+keywords = ["iterm2", "claude-code", "session", "restore", "macos"]
+
+[project.urls]
+Repository = "https://github.com/MityaRo/revive"
+
+[project.scripts]
+revive = "revive.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["revive"]
